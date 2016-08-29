@@ -1,0 +1,65 @@
+---
+title: "kardex Agus"
+author: "Agus Díaz"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Lista de calificaciones
+Materias y calificaciones del 1er Semestre:
+
+ * Programación Actuarial I 7.0
+ * Introducción a la Profesión Actuarial 8.0
+ * DHPC 10.0
+ * Conceptos de Cálculo 5.0
+ * Matemáticas Básicas 6.0
+ * Problemas de Matemáticas Básicas 6.0
+ 
+Materias y calificaciones del 2do Semestre:
+
+ * Teoria del interes I 5.0
+ * Microeconomia 10.0
+ * Formación Humana y Social 10.0
+ * Conceptos de Cálculo 10.0
+ * Geometria Analítica 8.0
+ * Teoria de ecuaciones 5.0
+ 
+Materias y calificaciones del 3er Semestre:
+
+ * Teoria del interes I 7.0
+ * Macroeconomia 5.0
+ * Lengua Extranjera I 8.0
+ * Cálculo Diferencial 5.0
+ * Teoria de ecuaciones 5.0
+ 
+ Materias y calificaciones del 4to Semestre:
+
+ * Teoria del Interes II 8.0
+ * Macroeconomia 7.0
+ * Cálculo Diferencial 8.0
+ * Teoria de ecuaciones 5.0
+ 
+ Materias y calificaciones del 5to Semestre:
+
+ * Programación Actuarial II 5.0
+ * Sistema Financiero Mexicano 10.0
+ * Finanzas Corporativas 5.0
+ * Lengua Extranjera II 8.0
+ * Cálculo Integral 7.0
+ * Teoria de ecuaciones 7.0
+ 
+ Materias y calificaciones del 6to Semestre:
+
+ * Programación Actuarial II 6.0
+ * Derivados Financieros 6.0
+ * Cálculo Diferencial en Varias Variables 7.0
+ * Algebra Lineal 5.0
+ * Probabilidad I 5.0
+
+Promedio General 8.0
+
