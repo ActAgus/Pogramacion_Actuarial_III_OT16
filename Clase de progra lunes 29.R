@@ -204,3 +204,37 @@ while (z>= 3 && z<= 10){
 if (z < 10) {baja <- (baja + 1)} else{sube <- (sube + 1)}
 sube
 baja
+
+#Creación de funciones
+suma2 <- function(x,y){
+  x+y
+}
+
+mayor10 <- function(x){
+  x[x>10]
+  
+}
+mayorque <- function(x,n){
+  x[x>n]
+}
+
+promedioCol <-  function(x, quitar.NA=TRUE){
+  nc <- ncol(x)
+  medias <-  vector("numeric",nc)
+  for(i in 1:nc){
+      medias[i] <- mean(x[,i],na.rm =quitar.NA)
+  }
+  medias
+  
+}
+
+#Evaluación perezosa
+f <- function(a,b){
+  a^2
+}
+
+g <- function(a,b){
+  print(a)
+  print(b)
+}
+?paste
