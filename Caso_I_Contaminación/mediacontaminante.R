@@ -10,6 +10,6 @@ mediacontaminante <- function(directorio, contaminante, id = 1:332) {
   return(mean(data, na.rm = TRUE)) #regresa la media del contaminante ignorando Na
 }
 
-mediacontaminante("specdata", "nitrate", 70:72)    
-mediacontaminante("specdata", "sulfate", 1:10)    
+mediacontaminante("specdata", "nitrate", 1:332)    
+mediacontaminante("specdata", "sulfate", 1:2)    
 

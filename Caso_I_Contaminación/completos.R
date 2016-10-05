@@ -9,3 +9,5 @@ completos <- function(directorio, id = 1:332) {
 }
 completos("specdata",30:25)
 completos("specdata",c(2,4,8,10,12))
+completos("specdata",1)
+completos("specdata",3)

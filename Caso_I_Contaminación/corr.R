@@ -15,3 +15,10 @@ corr <- function(directorio, horizonte = 0) {
 cr <- corr("specdata", 1)
 cr
 head(corr("specdata",400))
+
+crr <- corr("specdata",150)
+head(crr)
+
+corr("specdata",5000)
+numeric(0)
+summary(corr("specdata",400))

@@ -238,3 +238,141 @@ g <- function(a,b){
   print(b)
 }
 ?paste
+
+library(ggplot2)
+search()
+
+hacer.potencia <- function(n){
+  potencia <- function(x){
+    x^n
+    
+  }
+  potencia
+}
+
+#Esta función regresa comor resultado una función como su valor.
+cubica <- hacer.potencia(3)
+cuadrada <- hacer.potencia(2)
+
+cubica(3)
+cuadrada(3)
+
+ls(environment(cubica))
+get("n",environment(cubica))
+ls(environment(cuadrada))
+get("n", environment(cuadrada))
+
+#Dates and times
+    x <- as.Date("1970-01-01")
+    x
+    unclass(x)
+    unclass(as.Date("1970-01-02"))
+date()    
+as.POSIXct(date())
+
+lapply 
+function(x,FUN,...)
+{
+    FUN <- match.fun(FUN)
+    if(!is.vector(x)|| is.object(x))
+        x <- as.list(x)#Coerciona
+    .Internal(lapply(x,FUN)) #En C++ lo resuelve mas rapido y lo regresa a R
+}
+#<bytecode: 0x00000000055040>
+#<environment:namespace:base>
+   
+
+#is.algo evalua si es verdadero o falso
+
+x <-list(a=1:5, b=rnorm(10000))
+lapply(x, mean)
+
+x <-list(a=1:5, b=rnorm(10), c=rnorm(10,1), d=rnorm(10,2))
+lapply(x, mean)
+
+x <-list(a=1:5, b=rnorm(10), c=rnorm(10,1), d=rnorm(10,2))
+sapply(x, mean)
+
+x <-list(a=1:5, b=rnorm(10), c=rnorm(10,1), d=rnorm(10,2))
+apply(x, mean)
+
+
+x <- 1:4
+lapply(x,runif)
+
+x <- 1:4
+lapply(x,runif, max=15, min=5)
+
+x <- 1:4
+sapply(x,runif, max=15, min=5)
+
+x <- 1:4
+apply(x,runif, max=15, min=5)
+
+
+
+#Usando Apply
+x <- matrix(rnorm(200), 20, 10)
+apply(x, 2, mean)
+apply(x,1,sum)
+
+x <- matrix(rnorm(200), 20, 10)
+apply(x, 1, quantile, probs=c(0.25,0.75))
+?quantile
+
+a <- array(rnorm(2*2*10), c(2,2,10))
+apply(a,c(1,2),mean)
+
+rowMeans(a,dims=2)
+
+
+a <- array(rnorm(2*2*10), c(2,2,10))
+apply(a,c(1,3),mean)
+
+rowMeans(a,dims=2)
+
+a <- array(rnorm(2*2*10), c(2,2,10))
+apply(a,c(2,3),mean)
+
+rowMeans(a,dims=2)
+
+# las flechitas son las que hacen que no se escriba bien en el teclado de R
+#?????? visto por ti  el  amor de mi vida jajaja
+list(rep(1,4), rep(2,3), rep(3,2), rep(4,1))
+mapply(rep, 1:4, 4:1)
+
+noise <- function(n, mean,sd){
+    rnorm(n,mean,sd)
+}
+
+noise(5,1,2)
+noise(1:5,1:5,2)
+mapply(noise, 1:5, 1:5, 2)
+
+#Tapply
+str(tapply)
+
+library(datasets)
+h <- head(airquality)
+mls <- split(h[,1:3], h$Month)
+mls
+
+s <- split(airquality, airquality$Month)
+s <- split(airquality, airquality$Month)
+lapply(s, function(x) colMeans(x[,1:3]))
+
+
+log(-1)
+    
+imprimeMSJ <- function(x){
+    if(is.na(x))
+        print("x es un valor faltante")
+   
+     else if(x>0)
+    print("x es mayor que 0")
+   
+     else 
+        print("x es menor o igual que 0")
+    invisible(x)
+} 
+    
